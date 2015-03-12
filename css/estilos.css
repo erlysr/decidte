@@ -1,0 +1,42 @@
+body{
+	background-color: #FFEFE3;
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+/* Clases predefinidas */
+section[tipo-background="naranja"]{
+	background-color: #F7B757;
+}
+section[tipo-background="blanco"]{
+	background-color: #FFF8F0;
+}
+section[tipo-background="crema"]{
+	background-color: #FFEFE3;
+}
+section[tipo-background="verde"]{
+	background-color: #13C1A3;
+}
+section[tipo-background="rojo"]{
+	background-color: #F16252;
+}
+
+/*********************** HEADER ***************************************/
+
+
+/*********************** QUIENES SOMOS ***************************************/
+
+#quienes-somos-sec .intro-box{
+    padding: 40px 15px;
+}
+.texto-eventos{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*********************** EVENTOS PROXIMOS ***************************************/
+#eventos-proximos-sec{
+    padding-bottom: 10px;
+}
+#eventos-proximos-sec .contenedor .col-md-4 {
+    margin-bottom: 10px;
+}

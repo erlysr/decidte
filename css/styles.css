@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+	width: 1280px;
+}
+h1{
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+/* Clases predefinidas */
+section[tipo-background="naranja"]{
+	background-color: #FF9B6C;
+}
+/**************************************************************/
+.logo_header .logo_fig{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	line-height: 0;
+}
+.logo_header .logo_fig .logo_decidte{
+	width: 1280px;
+
+}
+.mensaje_section .construccion_text{
+
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.contacto_mail{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

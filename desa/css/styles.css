@@ -1,0 +1,77 @@
+body{
+	width: 1280px;
+	background-color: #FFEFE3;
+}
+h1[fuente-titulo="Barrio"]{
+	font-family: 'barrioregular';
+	color: #FFEFE3;
+	font-size: 60px;
+	letter-spacing: 6px;
+}
+h1[fuente-titulo="Tryst"]{
+	font-family: 'trystregular';
+	color: #FFEFE3;
+}
+h1[fuente-titulo="Medio"]{
+	font-family: 'medioregular';
+}
+h1[fuente-titulo="Mohave"]{
+	font-family: 'mohaveregular';
+}
+h1[fuente-titulo="MohaveBold"]{
+	font-family: 'mohavebold';
+	color: #FFEFE3;
+}
+h1{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+	border: 0;
+}
+
+/* Clases predefinidas */
+section[tipo-background="naranja"]{
+	background-color: #F7B757;
+}
+section[tipo-background="blanco"]{
+	background-color: #FFF8F0;
+}
+section[tipo-background="crema"]{
+	background-color: #FFEFE3;
+}
+section[tipo-background="verde"]{
+	background-color: #13C1A3;
+}
+section[tipo-background="rojo"]{
+	background-color: #F16252;
+}
+p[fuente-parrafo="Lato"]{
+	font-family: 'Lato', sans-serif;
+}
+p[fuente-parrafo="Roboto"]{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+/**************************************************************/
+.logo_header .logo_fig{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	line-height: 0;
+}
+.logo_header .logo_fig .logo_decidte{
+	width: 1280px;
+
+}
+.mensaje_section .construccion_text{
+
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.contacto_mail{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
