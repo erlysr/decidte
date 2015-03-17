@@ -28,12 +28,12 @@ img {border:none;}
 .xSquare_image3 .x_loader_holder img, .xSquare_image4 .x_loader_holder img,
 .xSquare_image5 .x_loader_holder img, .xSquare_image6 .x_loader_holder img,
 .xSquare_image7 .x_loader_holder img {position:absolute; top:50%; left:50%; margin:-15px 0 0 -15px;}
-
+/*
 a.xSquare_left {position:absolute; z-index:2; display:block; width:30px; height:60px; overflow:hidden; top:212px; left:25px;}
 a.xSquare_left span {display:block; width:0; height:0; border:30px solid transparent; border-right:30px solid #f04a39; margin-left:-30px;}
 a.xSquare_right {position:absolute; z-index:2; display:block; width:30px; height:60px; overflow:hidden; top:212px; right:25px;}
 a.xSquare_right span {display:block; width:0; height:0; border:30px solid transparent; border-left:30px solid #f04a39;}
-
+*/
 
 .xSquare_image1 img {position:absolute; top:-127px; left:-191px;}
 .xSquare_image2 img {position:absolute; top:-122px; left:-75px;}
