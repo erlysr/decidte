@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="fonts/ostrich%20sans/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="fonts/pt%20sans/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="css/xSquare_style.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="css/lightbox.css" />
+
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/xSquare_style_IE.css" />
+<![endif]-->
+
+
+<title>X Slider</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta charset="UTF-8">
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="js/xsquare.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+
+<script>
+var map=new Array();
+map['960'] =[
+
+		[	// ==== SLIDE 1 ====
+			{image: 'content/content2/1.jpg', gray_image: 'content/content2/gray/1.jpg', a_href: 'content/content2/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/2.jpg', gray_image: 'content/content2/gray/2.jpg', a_href: 'content/content2/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/4.jpg', gray_image: 'content/content2/gray/4.jpg', a_href: 'content/content2/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/7.jpg', gray_image: 'content/content2/gray/7.jpg', a_href: 'content/content2/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/5.jpg', gray_image: 'content/content2/gray/5.jpg', a_href: 'content/content2/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/6.jpg', gray_image: 'content/content2/gray/6.jpg', a_href: 'content/content2/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/3.jpg', gray_image: 'content/content2/gray/3.jpg', a_href: 'content/content2/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''}
+		],
+
+		[	// ==== SLIDE 2 ====
+		
+			{image: 'content/1.jpg', gray_image: 'content/gray/1.jpg', a_href: 'content/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: 'BIG IMAGE TITLE', text: 'Lorem ipsum dolor sit amet, consectetur <br />adipisicing elit, sed do eiusmod <br />tempor incididunt'},
+			{image: 'content/2.jpg', gray_image: 'content/gray/2.jpg', a_href: 'content/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: '' },
+			{image: 'content/3.jpg', gray_image: 'content/gray/3.jpg', a_href: 'content/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/4.jpg', gray_image: 'content/gray/4.jpg', a_href: 'content/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/5.jpg', gray_image: 'content/gray/5.jpg', a_href: 'content/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/6.jpg', gray_image: 'content/gray/6.jpg', a_href: 'content/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: '', gray_image: '', a_href: '', a_rel: '', a_title: '', title: '', text: '<span>THE</span><span class="black">X SQUARE</span><span>TEMPLATE</span>'}
+		],
+		
+		[	// ==== SLIDE 3 ====
+			{image: 'content/content1/1.jpg', gray_image: 'content/content1/gray/1.jpg', a_href: 'content/content1/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/2.jpg', gray_image: 'content/content1/gray/2.jpg', a_href: 'content/content1/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/4.jpg', gray_image: 'content/content1/gray/4.jpg', a_href: 'content/content1/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/7.jpg', gray_image: 'content/content1/gray/7.jpg', a_href: 'content/content1/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/5.jpg', gray_image: 'content/content1/gray/5.jpg', a_href: 'content/content1/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/6.jpg', gray_image: 'content/content1/gray/6.jpg', a_href: 'content/content1/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/3.jpg', gray_image: 'content/content1/gray/3.jpg', a_href: 'content/content1/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''}
+		]
+
+];
+
+
+map['768']=[
+
+		[	// ==== SLIDE 1 ====
+			{image: 'content/content2/768/1.jpg', gray_image: 'content/content2/768/gray/1.jpg', a_href: 'content/content2/768/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/768/4.jpg', gray_image: 'content/content2/768/gray/4.jpg', a_href: 'content/content2/768/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/768/2.jpg', gray_image: 'content/content2/768/gray/2.jpg', a_href: 'content/content2/768/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/768/6.jpg', gray_image: 'content/content2/768/gray/6.jpg', a_href: 'content/content2/768/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/768/5.jpg', gray_image: 'content/content2/768/gray/5.jpg', a_href: 'content/content2/768/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/768/3.jpg', gray_image: 'content/content2/768/gray/3.jpg', a_href: 'content/content2/768/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/768/7.jpg', gray_image: 'content/content2/768/gray/7.jpg', a_href: 'content/content2/768/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''}
+		],
+
+		[	// ==== SLIDE 2 ====
+		
+			{image: 'content/1.jpg', gray_image: 'content/gray/1.jpg', a_href: 'content/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: 'BIG IMAGE TITLE', text: 'Lorem ipsum dolor sit amet, consectetur <br />adipisicing elit, sed do eiusmod <br />tempor incididunt'},
+			{image: 'content/2.jpg', gray_image: 'content/gray/2.jpg', a_href: 'content/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: '' },
+			{image: 'content/3.jpg', gray_image: 'content/gray/3.jpg', a_href: 'content/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/4.jpg', gray_image: 'content/gray/4.jpg', a_href: 'content/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/5.jpg', gray_image: 'content/gray/5.jpg', a_href: 'content/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/6.jpg', gray_image: 'content/gray/6.jpg', a_href: 'content/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: '', gray_image: '', a_href: '', a_rel: '', a_title: '', title: '', text: '<span>THE</span><span class="black">X SQUARE</span><span>TEMPLATE</span>'}
+		],
+				
+		[	// ==== SLIDE 3 ====
+			{image: 'content/content1/768/1.jpg', gray_image: 'content/content1/768/gray/1.jpg', a_href: 'content/content1/768/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/768/4.jpg', gray_image: 'content/content1/768/gray/4.jpg', a_href: 'content/content1/768/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/768/2.jpg', gray_image: 'content/content1/768/gray/2.jpg', a_href: 'content/content1/768/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/768/6.jpg', gray_image: 'content/content1/768/gray/6.jpg', a_href: 'content/content1/768/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/768/5.jpg', gray_image: 'content/content1/768/gray/5.jpg', a_href: 'content/content1/768/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/768/3.jpg', gray_image: 'content/content1/768/gray/3.jpg', a_href: 'content/content1/768/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/768/7.jpg', gray_image: 'content/content1/768/gray/7.jpg', a_href: 'content/content1/768/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''}
+
+		]
+
+];
+
+
+
+map['440']=[
+
+		[	// ==== SLIDE 1 ====
+			{image: 'content/content2/440/1.jpg', gray_image: 'content/content2/440/gray/1.jpg', a_href: 'content/content2/440/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/440/4.jpg', gray_image: 'content/content2/440/gray/4.jpg', a_href: 'content/content2/440/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/440/2.jpg', gray_image: 'content/content2/440/gray/2.jpg', a_href: 'content/content2/440/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/440/6.jpg', gray_image: 'content/content2/440/gray/6.jpg', a_href: 'content/content2/440/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/440/5.jpg', gray_image: 'content/content2/440/gray/5.jpg', a_href: 'content/content2/440/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/440/3.jpg', gray_image: 'content/content2/440/gray/3.jpg', a_href: 'content/content2/440/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content2/440/7.jpg', gray_image: 'content/content2/440/gray/7.jpg', a_href: 'content/content2/440/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''}
+
+		],
+
+		[	// ==== SLIDE 2 ====
+		
+			{image: 'content/1.jpg', gray_image: 'content/gray/1.jpg', a_href: 'content/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: 'BIG IMAGE TITLE', text: 'Lorem ipsum dolor sit amet, consectetur <br />adipisicing elit, sed do eiusmod <br />tempor incididunt'},
+			{image: 'content/2.jpg', gray_image: 'content/gray/2.jpg', a_href: 'content/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: '' },
+			{image: 'content/3.jpg', gray_image: 'content/gray/3.jpg', a_href: 'content/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/4.jpg', gray_image: 'content/gray/4.jpg', a_href: 'content/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/5.jpg', gray_image: 'content/gray/5.jpg', a_href: 'content/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/6.jpg', gray_image: 'content/gray/6.jpg', a_href: 'content/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: '', gray_image: '', a_href: '', a_rel: '', a_title: '', title: '', text: '<span>THE</span><span class="black">X SQUARE</span><span>TEMPLATE</span>'}
+		],
+				
+		[	// ==== SLIDE 3 ====
+			{image: 'content/content1/440/1.jpg', gray_image: 'content/content1/440/gray/1.jpg', a_href: 'content/content1/440/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/440/4.jpg', gray_image: 'content/content1/440/gray/4.jpg', a_href: 'content/content1/440/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/440/2.jpg', gray_image: 'content/content1/440/gray/2.jpg', a_href: 'content/content1/440/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/440/6.jpg', gray_image: 'content/content1/440/gray/6.jpg', a_href: 'content/content1/440/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/440/5.jpg', gray_image: 'content/content1/440/gray/5.jpg', a_href: 'content/content1/440/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/440/3.jpg', gray_image: 'content/content1/440/gray/3.jpg', a_href: 'content/content1/440/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+			{image: 'content/content1/440/7.jpg', gray_image: 'content/content1/440/gray/7.jpg', a_href: 'content/content1/440/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''}
+
+		]		
+
+];
+
+
+map['300']=[
+
+
+		[	// ==== SLIDE 1 ====
+			{image: 'content/content2/300/1.jpg', gray_image: 'content/content2/300/gray/1.jpg', a_href: 'content/content2/300/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '111', text: '222'},
+			{image: 'content/content2/300/4.jpg', gray_image: 'content/content2/300/gray/4.jpg', a_href: 'content/content2/300/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '222', text: 'WWW'},
+			{image: 'content/content2/300/2.jpg', gray_image: 'content/content2/300/gray/2.jpg', a_href: 'content/content2/300/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '333', text: 'xxx'},
+			{image: 'content/content2/300/6.jpg', gray_image: 'content/content2/300/gray/6.jpg', a_href: 'content/content2/300/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '444', text: 'WWW'},
+			{image: 'content/content2/300/5.jpg', gray_image: 'content/content2/300/gray/5.jpg', a_href: 'content/content2/300/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '555', text: 'xxx'},
+			{image: 'content/content2/300/3.jpg', gray_image: 'content/content2/300/gray/3.jpg', a_href: 'content/content2/300/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '777', text: 'WWW'},
+			{image: 'content/content2/300/7.jpg', gray_image: 'content/content2/300/gray/7.jpg', a_href: 'content/content2/300/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '666', text: 'WWW'}
+
+		],
+
+		[	// ==== SLIDE 2 ====
+		
+			{image: 'content/1.jpg', gray_image: 'content/gray/1.jpg', a_href: 'content/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: 'BIG IMAGE TITLE', text: 'Lorem ipsum dolor sit amet, consectetur <br />adipisicing elit, sed do eiusmod <br />tempor incididunt'},
+			{image: 'content/2.jpg', gray_image: 'content/gray/2.jpg', a_href: 'content/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: '' },
+			{image: 'content/3.jpg', gray_image: 'content/gray/3.jpg', a_href: 'content/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/4.jpg', gray_image: 'content/gray/4.jpg', a_href: 'content/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/5.jpg', gray_image: 'content/gray/5.jpg', a_href: 'content/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: 'content/6.jpg', gray_image: 'content/gray/6.jpg', a_href: 'content/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+			{image: '', gray_image: '', a_href: '', a_rel: '', a_title: '', title: '', text: '<span>THE</span><span class="black">X SQUARE</span><span>TEMPLATE</span>'}
+		],
+
+		[	// ==== SLIDE 3 ====
+			{image: 'content/content1/300/1.jpg', gray_image: 'content/content1/300/gray/1.jpg', a_href: 'content/content1/300/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '111', text: '222'},
+			{image: 'content/content1/300/4.jpg', gray_image: 'content/content1/300/gray/4.jpg', a_href: 'content/content1/300/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '222', text: 'WWW'},
+			{image: 'content/content1/300/2.jpg', gray_image: 'content/content1/300/gray/2.jpg', a_href: 'content/content1/300/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '333', text: 'xxx'},
+			{image: 'content/content1/300/6.jpg', gray_image: 'content/content1/300/gray/6.jpg', a_href: 'content/content1/300/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '444', text: 'WWW'},
+			{image: 'content/content1/300/5.jpg', gray_image: 'content/content1/300/gray/5.jpg', a_href: 'content/content1/300/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '555', text: 'xxx'},
+			{image: 'content/content1/300/3.jpg', gray_image: 'content/content1/300/gray/3.jpg', a_href: 'content/content1/300/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '777', text: 'WWW'},
+			{image: 'content/content1/300/7.jpg', gray_image: 'content/content1/300/gray/7.jpg', a_href: 'content/content1/300/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '666', text: 'WWW'}
+
+		],
+
+		
+
+
+];
+
+
+
+
+var size = '';
+$(document).ready(function(){
+	size = getResponsiveSize();
+	$('.xSquare').xSquare({
+		'map':		map[size],
+		'easing':	'swing',
+		'speed':	'slow',
+		'title': '<span class="black">JOSE MARIA VELASCO</span><span>PAISAJISTA TEMASCALCINGUENSE</span>'
+	});
+
+});
+
+
+$(window).resize(function(e) {
+	xResizeDelay(function(){
+		var newSize = getResponsiveSize();
+		if(newSize != size) {
+			size = newSize;
+			$('.xSquare').xSquare('set_new_map', map[size]);
+		}
+	},300);
+
+});
+
+function getResponsiveSize() {
+	var size = $('body').width();
+
+	if (size < 440) {
+		return '300';
+	}
+	else if (size < 768) {
+		return '440';
+	}
+	else if (size < 960) {
+		return '768';
+	}
+	else {
+		return '960';
+	}
+}
+
+var xResizeDelay = (function () {
+	var timers = {};
+	return function (callback, ms, uniqueId) {
+		if (!uniqueId) {
+			uniqueId = "noId";
+		}
+		if (timers[uniqueId]) {
+			clearTimeout (timers[uniqueId]);
+		}
+		timers[uniqueId] = setTimeout(callback, ms);
+	};
+})();
+
+
+
+</script>
+
+</head>
+
+<body>
+	<div class="xSquare"></div><!-- page_wrapper -->
+	<div class="selectors"><a href="documentation.html">Documentation</a></div>
+
+
+
+
+
+
+</body>
+
+</html>

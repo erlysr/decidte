@@ -1,26 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Version 1.0 -->
 	<meta charset="UTF-8">
-	<title>DECIDTE TEMASCALCINGO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Desarrollo Cultura e impuldo de temascalcingo. Revista de cultura, educación y turismo">
+    <meta name="author" content="Ingeniero Erly Serrano">
+	<title>DECIDTE TEMASCALCINGO. Revista de cultural, educación y turismo</title>
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
+			<!-- X SLIDER -->
+	<link rel="stylesheet" type="text/css" href="fonts/ostrich%20sans/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/pt%20sans/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="css/xSquare_style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" href="css/lightbox.css" />
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+<!-- ********************************** JAVASCRIPT BOOTSTRAP **************************************** -->	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+		<!-- JAVASCRIPT X SLIDER -->
+	<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="js/xsquare.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+
+	<script>
+		var map=new Array();
+		map['960'] =[
+
+				[	// ==== SLIDE 1 ====
+					{image: 'content/content2/1.jpg', gray_image: 'content/content2/gray/1.jpg', a_href: 'content/content2/1.jpg', a_rel: 'lightbox', a_title: 'Ahuehuete de la Noche Triste, 1910.', title: '', text: ''},
+					{image: 'content/content2/2.jpg', gray_image: 'content/content2/gray/2.jpg', a_href: 'content/content2/2.jpg', a_rel: 'lightbox', a_title: 'Autorretrato, 1877.', title: '', text: ''},
+					{image: 'content/content2/4.jpg', gray_image: 'content/content2/gray/4.jpg', a_href: 'content/content2/4.jpg', a_rel: 'lightbox', a_title: 'Catedral de Oaxaca, 1887', title: '', text: ''},
+					{image: 'content/content2/7.jpg', gray_image: 'content/content2/gray/7.jpg', a_href: 'content/content2/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content2/5.jpg', gray_image: 'content/content2/gray/5.jpg', a_href: 'content/content2/5.jpg', a_rel: 'lightbox', a_title: 'Hacienda de Chimalpa, 1893', title: '', text: ''},
+					{image: 'content/content2/6.jpg', gray_image: 'content/content2/gray/6.jpg', a_href: 'content/content2/6.jpg', a_rel: 'lightbox', a_title: 'La Alameda de México, 1866', title: '', text: ''},
+					{image: 'content/content2/3.jpg', gray_image: 'content/content2/gray/3.jpg', a_href: 'content/content2/3.jpg', a_rel: 'lightbox', a_title: 'Cañada de Metlac, 1893', title: '', text: ''}
+				],
+
+				[	// ==== SLIDE 2 ====
+				
+					{image: 'content/1.jpg', gray_image: 'content/gray/1.jpg', a_href: 'content/1.jpg', a_rel: 'lightbox', a_title: 'Puente rústico, 1862', title: '1840-1912', text: 'El mayor paisajista del mundo<br/>y de la historia<br/>Temascalcinguense'},
+					{image: 'content/2.jpg', gray_image: 'content/gray/2.jpg', a_href: 'content/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: '' },
+					{image: 'content/3.jpg', gray_image: 'content/gray/3.jpg', a_href: 'content/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/4.jpg', gray_image: 'content/gray/4.jpg', a_href: 'content/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/5.jpg', gray_image: 'content/gray/5.jpg', a_href: 'content/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/6.jpg', gray_image: 'content/gray/6.jpg', a_href: 'content/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: '', gray_image: '', a_href: '', a_rel: '', a_title: '', title: '', text: '<span>THE</span><span class="black">X SQUARE</span><span>TEMPLATE</span>'}
+				],
+				
+				[	// ==== SLIDE 3 ====
+					{image: 'content/content1/1.jpg', gray_image: 'content/content1/gray/1.jpg', a_href: 'content/content1/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/2.jpg', gray_image: 'content/content1/gray/2.jpg', a_href: 'content/content1/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/4.jpg', gray_image: 'content/content1/gray/4.jpg', a_href: 'content/content1/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/7.jpg', gray_image: 'content/content1/gray/7.jpg', a_href: 'content/content1/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/5.jpg', gray_image: 'content/content1/gray/5.jpg', a_href: 'content/content1/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/6.jpg', gray_image: 'content/content1/gray/6.jpg', a_href: 'content/content1/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/3.jpg', gray_image: 'content/content1/gray/3.jpg', a_href: 'content/content1/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''}
+				]
+
+		];
+
+
+		map['768']=[
+
+				[	// ==== SLIDE 1 ====
+					{image: 'content/content2/768/1.jpg', gray_image: 'content/content2/768/gray/1.jpg', a_href: 'content/content2/768/1.jpg', a_rel: 'lightbox', a_title: 'Ahuehuete de la Noche Triste, 1910', title: '', text: ''},
+					{image: 'content/content2/768/4.jpg', gray_image: 'content/content2/768/gray/4.jpg', a_href: 'content/content2/768/4.jpg', a_rel: 'lightbox', a_title: 'Catedral de Oaxaca, 1887', title: '', text: ''},
+					{image: 'content/content2/768/2.jpg', gray_image: 'content/content2/768/gray/2.jpg', a_href: 'content/content2/768/2.jpg', a_rel: 'lightbox', a_title: 'Autorretrato, 1877', title: '', text: ''},
+					{image: 'content/content2/768/6.jpg', gray_image: 'content/content2/768/gray/6.jpg', a_href: 'content/content2/768/6.jpg', a_rel: 'lightbox', a_title: 'La Alameda de México, 1866', title: '', text: ''},
+					{image: 'content/content2/768/5.jpg', gray_image: 'content/content2/768/gray/5.jpg', a_href: 'content/content2/768/5.jpg', a_rel: 'lightbox', a_title: 'OHacienda de Chimalpa, 1893', title: '', text: ''},
+					{image: 'content/content2/768/3.jpg', gray_image: 'content/content2/768/gray/3.jpg', a_href: 'content/content2/768/3.jpg', a_rel: 'lightbox', a_title: 'Cañada de Metlac, 1893', title: '', text: ''},
+					{image: 'content/content2/768/7.jpg', gray_image: 'content/content2/768/gray/7.jpg', a_href: 'content/content2/768/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''}
+				],
+
+				[	// ==== SLIDE 2 ====
+				
+					{image: 'content/1.jpg', gray_image: 'content/gray/1.jpg', a_href: 'content/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: 'BIG IMAGE TITLE', text: 'Lorem ipsum dolor sit amet, consectetur <br />adipisicing elit, sed do eiusmod <br />tempor incididunt'},
+					{image: 'content/2.jpg', gray_image: 'content/gray/2.jpg', a_href: 'content/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: '' },
+					{image: 'content/3.jpg', gray_image: 'content/gray/3.jpg', a_href: 'content/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/4.jpg', gray_image: 'content/gray/4.jpg', a_href: 'content/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/5.jpg', gray_image: 'content/gray/5.jpg', a_href: 'content/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/6.jpg', gray_image: 'content/gray/6.jpg', a_href: 'content/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: '', gray_image: '', a_href: '', a_rel: '', a_title: '', title: '', text: '<span>THE</span><span class="black">X SQUARE</span><span>TEMPLATE</span>'}
+				],
+						
+				[	// ==== SLIDE 3 ====
+					{image: 'content/content1/768/1.jpg', gray_image: 'content/content1/768/gray/1.jpg', a_href: 'content/content1/768/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/768/4.jpg', gray_image: 'content/content1/768/gray/4.jpg', a_href: 'content/content1/768/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/768/2.jpg', gray_image: 'content/content1/768/gray/2.jpg', a_href: 'content/content1/768/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/768/6.jpg', gray_image: 'content/content1/768/gray/6.jpg', a_href: 'content/content1/768/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/768/5.jpg', gray_image: 'content/content1/768/gray/5.jpg', a_href: 'content/content1/768/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/768/3.jpg', gray_image: 'content/content1/768/gray/3.jpg', a_href: 'content/content1/768/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/768/7.jpg', gray_image: 'content/content1/768/gray/7.jpg', a_href: 'content/content1/768/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''}
+
+				]
+
+		];
+
+
+
+		map['440']=[
+
+				[	// ==== SLIDE 1 ====
+					{image: 'content/content2/440/1.jpg', gray_image: 'content/content2/440/gray/1.jpg', a_href: 'content/content2/440/1.jpg', a_rel: 'lightbox', a_title: 'Ahuehuete de la Noche Triste, 1910', title: '', text: ''},
+					{image: 'content/content2/440/4.jpg', gray_image: 'content/content2/440/gray/4.jpg', a_href: 'content/content2/440/4.jpg', a_rel: 'lightbox', a_title: 'Catedral de Oaxaca, 1887', title: '', text: ''},
+					{image: 'content/content2/440/2.jpg', gray_image: 'content/content2/440/gray/2.jpg', a_href: 'content/content2/440/2.jpg', a_rel: 'lightbox', a_title: 'Autorretrato, 1877', title: '', text: ''},
+					{image: 'content/content2/440/6.jpg', gray_image: 'content/content2/440/gray/6.jpg', a_href: 'content/content2/440/6.jpg', a_rel: 'lightbox', a_title: 'La Alameda de México, 1866', title: '', text: ''},
+					{image: 'content/content2/440/5.jpg', gray_image: 'content/content2/440/gray/5.jpg', a_href: 'content/content2/440/5.jpg', a_rel: 'lightbox', a_title: 'Hacienda de Chimalpa, 1893', title: '', text: ''},
+					{image: 'content/content2/440/3.jpg', gray_image: 'content/content2/440/gray/3.jpg', a_href: 'content/content2/440/3.jpg', a_rel: 'lightbox', a_title: 'Cañada de Metlac, 1893', title: '', text: ''},
+					{image: 'content/content2/440/7.jpg', gray_image: 'content/content2/440/gray/7.jpg', a_href: 'content/content2/440/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''}
+
+				],
+
+				[	// ==== SLIDE 2 ====
+				
+					{image: 'content/1.jpg', gray_image: 'content/gray/1.jpg', a_href: 'content/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: 'BIG IMAGE TITLE', text: 'Lorem ipsum dolor sit amet, consectetur <br />adipisicing elit, sed do eiusmod <br />tempor incididunt'},
+					{image: 'content/2.jpg', gray_image: 'content/gray/2.jpg', a_href: 'content/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: '' },
+					{image: 'content/3.jpg', gray_image: 'content/gray/3.jpg', a_href: 'content/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/4.jpg', gray_image: 'content/gray/4.jpg', a_href: 'content/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/5.jpg', gray_image: 'content/gray/5.jpg', a_href: 'content/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/6.jpg', gray_image: 'content/gray/6.jpg', a_href: 'content/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: '', gray_image: '', a_href: '', a_rel: '', a_title: '', title: '', text: '<span>THE</span><span class="black">X SQUARE</span><span>TEMPLATE</span>'}
+				],
+						
+				[	// ==== SLIDE 3 ====
+					{image: 'content/content1/440/1.jpg', gray_image: 'content/content1/440/gray/1.jpg', a_href: 'content/content1/440/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/440/4.jpg', gray_image: 'content/content1/440/gray/4.jpg', a_href: 'content/content1/440/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/440/2.jpg', gray_image: 'content/content1/440/gray/2.jpg', a_href: 'content/content1/440/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/440/6.jpg', gray_image: 'content/content1/440/gray/6.jpg', a_href: 'content/content1/440/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/440/5.jpg', gray_image: 'content/content1/440/gray/5.jpg', a_href: 'content/content1/440/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/440/3.jpg', gray_image: 'content/content1/440/gray/3.jpg', a_href: 'content/content1/440/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''},
+					{image: 'content/content1/440/7.jpg', gray_image: 'content/content1/440/gray/7.jpg', a_href: 'content/content1/440/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '', text: ''}
+
+				]		
+
+		];
+
+
+		map['300']=[
+
+
+				[	// ==== SLIDE 1 ====
+					{image: 'content/content2/300/1.jpg', gray_image: 'content/content2/300/gray/1.jpg', a_href: 'content/content2/300/1.jpg', a_rel: 'lightbox', a_title: 'Ahuehuete de la Noche Triste, 1910', title: '1910', text: 'Ahuehuete Noche Triste'},
+					{image: 'content/content2/300/4.jpg', gray_image: 'content/content2/300/gray/4.jpg', a_href: 'content/content2/300/4.jpg', a_rel: 'lightbox', a_title: 'Catedral de Oaxaca, 1887', title: '1887', text: 'Catedral de Oaxaca'},
+					{image: 'content/content2/300/2.jpg', gray_image: 'content/content2/300/gray/2.jpg', a_href: 'content/content2/300/2.jpg', a_rel: 'lightbox', a_title: 'Autorretrato, 1877', title: '1877', text: 'Autorretrato'},
+					{image: 'content/content2/300/6.jpg', gray_image: 'content/content2/300/gray/6.jpg', a_href: 'content/content2/300/6.jpg', a_rel: 'lightbox', a_title: 'La Alameda de México, 1866', title: '1866', text: 'Alameda de México'},
+					{image: 'content/content2/300/5.jpg', gray_image: 'content/content2/300/gray/5.jpg', a_href: 'content/content2/300/5.jpg', a_rel: 'lightbox', a_title: 'Hacienda de Chimalpa, 1893', title: '1893', text: 'Hacienda de Chimalpa'},
+					{image: 'content/content2/300/3.jpg', gray_image: 'content/content2/300/gray/3.jpg', a_href: 'content/content2/300/3.jpg', a_rel: 'lightbox', a_title: 'Cañada de Metlac, 1893', title: '1893', text: 'Cañada de Metlac'},
+					{image: 'content/content2/300/7.jpg', gray_image: 'content/content2/300/gray/7.jpg', a_href: 'content/content2/300/7.jpg', a_rel: 'lightbox', a_title: 'Patio del ex-convento de San Agustín, 1891', title: '1891', text: 'Ex-convento de San Agustin'}
+
+				],
+
+				[	// ==== SLIDE 2 ====
+				
+					{image: 'content/1.jpg', gray_image: 'content/gray/1.jpg', a_href: 'content/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: 'BIG IMAGE TITLE', text: 'Lorem ipsum dolor sit amet, consectetur <br />adipisicing elit, sed do eiusmod <br />tempor incididunt'},
+					{image: 'content/2.jpg', gray_image: 'content/gray/2.jpg', a_href: 'content/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: '' },
+					{image: 'content/3.jpg', gray_image: 'content/gray/3.jpg', a_href: 'content/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/4.jpg', gray_image: 'content/gray/4.jpg', a_href: 'content/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/5.jpg', gray_image: 'content/gray/5.jpg', a_href: 'content/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: 'content/6.jpg', gray_image: 'content/gray/6.jpg', a_href: 'content/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption', title: '', text: ''},
+					{image: '', gray_image: '', a_href: '', a_rel: '', a_title: '', title: '', text: '<span>THE</span><span class="black">X SQUARE</span><span>TEMPLATE</span>'}
+				],
+
+				[	// ==== SLIDE 3 ====
+					{image: 'content/content1/300/1.jpg', gray_image: 'content/content1/300/gray/1.jpg', a_href: 'content/content1/300/1.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '111', text: '222'},
+					{image: 'content/content1/300/4.jpg', gray_image: 'content/content1/300/gray/4.jpg', a_href: 'content/content1/300/4.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '222', text: 'WWW'},
+					{image: 'content/content1/300/2.jpg', gray_image: 'content/content1/300/gray/2.jpg', a_href: 'content/content1/300/2.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '333', text: 'xxx'},
+					{image: 'content/content1/300/6.jpg', gray_image: 'content/content1/300/gray/6.jpg', a_href: 'content/content1/300/6.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '444', text: 'WWW'},
+					{image: 'content/content1/300/5.jpg', gray_image: 'content/content1/300/gray/5.jpg', a_href: 'content/content1/300/5.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '555', text: 'xxx'},
+					{image: 'content/content1/300/3.jpg', gray_image: 'content/content1/300/gray/3.jpg', a_href: 'content/content1/300/3.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '777', text: 'WWW'},
+					{image: 'content/content1/300/7.jpg', gray_image: 'content/content1/300/gray/7.jpg', a_href: 'content/content1/300/7.jpg', a_rel: 'lightbox', a_title: 'Optional caption 2', title: '666', text: 'WWW'}
+
+				],
+
+				
+
+
+		];
+
+
+
+
+		var size = '';
+		$(document).ready(function(){
+			size = getResponsiveSize();
+			$('.xSquare').xSquare({
+				'map':		map[size],
+				'easing':	'swing',
+				'speed':	'slow',
+				'title': '<span class="black">JOSE MARIA VELASCO</span><span>PAISAJISTA TEMASCALCINGUENSE</span>'
+			});
+
+		});
+
+
+		$(window).resize(function(e) {
+			xResizeDelay(function(){
+				var newSize = getResponsiveSize();
+				if(newSize != size) {
+					size = newSize;
+					$('.xSquare').xSquare('set_new_map', map[size]);
+				}
+			},300);
+
+		});
+
+		function getResponsiveSize() {
+			var size = $('body').width();
+
+			if (size < 440) {
+				return '300';
+			}
+			else if (size < 768) {
+				return '440';
+			}
+			else if (size < 960) {
+				return '768';
+			}
+			else {
+				return '960';
+			}
+		}
+
+		var xResizeDelay = (function () {
+			var timers = {};
+			return function (callback, ms, uniqueId) {
+				if (!uniqueId) {
+					uniqueId = "noId";
+				}
+				if (timers[uniqueId]) {
+					clearTimeout (timers[uniqueId]);
+				}
+				timers[uniqueId] = setTimeout(callback, ms);
+			};
+		})();
+
+
+
+	</script>
 </head>
 <body>
-	<header class="logo_header">
-		<figure class="logo_fig">
-			<img class="logo_decidte" src="img/DECIDTE.jpg" alt="DECIDTE Temascalcingo"></img>
+
+/********************************** HEADER *************************************************/
+
+	<header id="logo-header">
+		<figure class="logo-fig">
+			<img class="logo-decidte-img center-block img-responsive" src="img/DECIDTE.jpg" alt="DECIDTE Temascalcingo"></img>
 		</figure>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Navegación</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#">DECIDTE</a>
+	        </div>
+	        <div id="navbar" class="collapse navbar-collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="#eventos-proximos-sec">Eventos</a></li>
+	            <li><a href="#jose-ma-velasco-sec">José Ma. Velasco</a></li>
+	            <li><a href="#temascalcingo-sec">Temascalcingo</a></li>
+	            <li><a href="http://bit.ly/decidte" target="_blank">Revista</a></li>
+	            <li><a href="#contacto-sec">Contacto</a></li>
+	            
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </nav>
 	</header>
-	<section class="mensaje_section" tipo-background="naranja">
-		<h1>Impulsa y difunde Temascalcingo</h1>
-		<p class="construccion_text">Nos encontramos en construcción. Muy pronto DECIDTE Temascalcingo en la web.</p>
+
+<!-- ********************************* CAROUSEL ******************************************** -->	
+
+<!-- Carousel
+    ================================================== -->
+    <section class="row" tipo-background="verde">
+	
+    <div id="myCarousel" class="carousel" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+      	<div class="item active">
+          <img id="carousel-img3" src="img/chimalpa768x500.jpg" class="carousel-img img-responsive" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>175 Aniversario del Natalicio de José Ma. Velasco</h1>
+              <p>El 6 de julio de este año conmemoraremos el aniversario del natalicio de nuestro ilustre temascalcinguence José Ma. Velasco. Los invitamos a introducirse en sus paisajes a través de una galería espectacular con las principales obras exhibidas en el Museo Nacional de Arte (MUNAL)</p>
+              <p><a class="btn btn-lg btn-primary" href="#jose-ma-velasco-sec" role="button">Ver Galería ..</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img id="carousel-img1" src="img/enduro768x500.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Turismo Extremo en Temas</h1>
+              <p>Subirte a la moto, vestirte apropiadamente, sentir la adrenalina correr por tus venas, tener la boca seca y sentir la emoción de recorrer los caminos, brechas y veredas que nos ofrece nuestro municipio es una experiencia única e inolvidable</p>
+              <p><a class="btn btn-lg btn-primary" href="https://decidte.ghost.io/2015/03/09/turismo-extremo-en-temas/" target="_blank" role="button">Ver mas ..</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img id="carousel-img2" src="img/viejos768x500.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Viejos de Corpus</h1>
+              <p>Cientos de personas salen a danzar por las calles con sus trajes típicos de viejos (creados con diferentes materiales como madera, ixtle, cartón, entre otros), con el principal objetivo de rendir culto al dios de la lluvia para que las cosechas sean fructíferas</p>
+              <p><a class="btn btn-lg btn-primary" href="http://decidte.ghost.io/2015/03/13/viejos-de/" role="button">Ver mas ..</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+ 
 	</section>
-	<footer>
-		<p class="contacto_mail">Contacto: <a href="mailto:informes@decidte.org?Subject=Informes%20internet" target="_top" class="contacto_mail">informes@decidte.org</a></p>
-	</footer>
+<!-- ********************************** QUIENES SOMOS ************************************** -->	
+
+	<section id="quienes-somos-sec" tipo-background="verde">
+		<div class="intro-box">
+			<h1 class="text-center">Quiénes somos</h1>
+			<p class="lead text-center">DECIDTE A.C. es una asociación civil conformada por habitantes del municipio de Temascalcingo.<br>Preocupados por el desarrollo de la comunidad.<br>Interesados por promover la cultura, el arte, las tradiciones, la historia y el desarrollo social de sus habitantes.</p>
+		</div>
+	</section>
+
+<!-- ************************ EVENTOS PROXIMOS ******************************************** -->	
+
+	<section id="eventos-proximos-sec" tipo-background="crema">
+		<div class="contenedor row">
+			<h1 class="text-center">Eventos Próximos</h1>
+			<div class="col col-md-4">
+				<div class="row">
+					<img class="img-circle center-block" src="img/jesucristosuperstar.jpg" alt="Foto Jesucristo Superstar" style="width: 140px; height: 140px;">
+					<h2 class="text-center">30 Aniversario, Grupo Teatral "Juan Ruiz de Alarcón" <br><small>Semana Santa 2015</small></h2>
+					<p class="text-center texto-eventos">Los miembros fundadores e integrantes de los dos primeros espectáculos del grupo han decidido celebrar estos 30 años con una sencilla pero emotiva reunión, en remembranza de aquellos inicios.
+					</p>
+					<a href="http://decidte.ghost.io/2015/03/11/30-aniversario-grupo-experimental-de-teatro-juan-ruiz-de-alarcon/" target="_blank">
+						<button class="btn btn-primary center-block">Ver mas ..
+						</button>
+					</a>
+				</div>	
+			</div>
+			<div class="col col-md-4">
+				<div class="row">
+					<img class="img-circle center-block" src="img/semana-santa.jpg" alt="Foto Cruciferos" style="width: 140px; height: 140px;">
+					<h2 class="text-center">Semana Santa<br><small>29 mar - 6 abr, 2015</small></h2>
+					<p class="text-center texto-eventos">Esta celebración se ha venido realizando a lo largo del tiempo desde la evangelización hasta nuestros días, considerada entre las 10 mejores a nivel nacional por su originalidad.
+					</p>
+					<a href="http://decidte.ghost.io/2015/03/13/semana-santa-en-temascalcingo-2/" target="_blank">
+						<button class="btn btn-primary center-block">Ver mas ..
+						</button>
+					</a>
+				</div>	
+			</div>
+			<div class="col col-md-4">
+				<div class="row">
+					<img class="img-circle center-block" src="img/viejos.jpg" alt="Xita Corpu" style="width: 140px; height: 140px;">
+					<h2 class="text-center">Viejos de Corpus<br><small>4 junio 2015</small></h2>
+					<p class="text-center texto-eventos">Cientos de personas salen a danzar por las calles con sus trajes típicos de viejos (creados con diferentes materiales como madera, ixtle, cartón, entre otros), con el principal objetivo de rendir culto al dios de la lluvia para que las cosechas sean fructíferas.
+					</p>
+					<a href="http://decidte.ghost.io/2015/03/13/viejos-de/" target="_blank">
+						<button class="btn btn-primary center-block">Ver mas ..
+						</button>
+					</a>
+				</div>	
+			</div>
+		</div>
+
+	</section>
+
+<!-- ********************************** JOSE MA. VELASCO ********************************** -->	
+
+	<section id="jose-ma-velasco-sec" tipo-background="naranja">
+		<h1 color-h-uno="rojo" class="text-center">José María Velasco</h1>
+		<div class="xSquare"></div><!-- page_wrapper -->
+		<p class="col texto-cont text-center hidden-xs">El temascalcinguense más ilustre es tambien el mayor paisajista del mundo y de la historia; José María Velasco, nacido en Temascalcingo en 1840 y fallecido en la Villa de Guadalupe en 1912. Su casa natal (ampliada) es ahora el Centro Cultural Regional que lleva su nombre.<br><br>Fué reconocido nacional e internacionalmente en vida; viajó con honor a Europa, pero curiosamente no pintó nada alla. Sus obras principales se exhiben en el museo Nacional de Arte (MUNAL) de la Ciudad de México.</p>
+	</section>
+
+<!-- ********************************** TEMASCALCINGO ************************************ -->
+
+	<section id="temascalcingo-sec" tipo-background="crema">
+		<!-- <h1 class="text-center">TEMASCALCINGO</h1> -->
+		<div class="tema row">
+			<div class="col col-md-4">
+				<div class="row">
+					<div class="col col-sm-12">
+						<img class="foto-thumbnail img-responsive img-circle center-block" src="img/pueblo2.jpg" alt="Generic placeholder image">
+					</div>
+					<!--
+					<div class="btn btn-primary btn-xs pull-right">Compartir
+					</div> -->
+				</div>
+			</div>
+			<div class="col col-md-8">
+				<h2 class="featurette-heading">Temascalcingo <span class="text-muted">Pueblo con encanto</span></h2>
+				<p>Pueblo con encanto, en sus callejuelas de laja de cantera y sus techos de teja de barro, cobijado por las montañas de su entorno, rodeado por el paisaje del extenso valle irrigado por canales provenientes de las aguas del serpenteante Rio Lerma. Es aquí el lugar donde naciera el más grande paisajista de México, el pintor José María Velasco.
+				</p>
+			</div>
+		</div>
+		<div class="tema row">
+			<div class="col col-md-8">
+				<h2 class="featurette-heading">Kiosco del centenario <span class="text-muted">Jardín principal</span></h2>
+				<p>Inaugurado el día 15 de Seeptiembre de 1910 con mótivo de las fiestas del centenario de la Independencia. <br>De forma semicircular y columnas de cantera en estilo corintio, sobre base de cinco gradas de circunferencia, constuido en el centro del jardín principal
+				</p>
+			</div>
+			<div class="col col-md-4">
+				<div class="row">
+					<div class="col col-sm-12">
+						<img class="foto-thumbnail img-responsive img-circle center-block" src="img/kiosko.jpg" alt="Generic placeholder image">
+					</div><!--
+					<div class="btn btn-primary btn-xs pull-left">Compartir
+					</div>-->
+				</div>
+			</div>
+		</div>
+		<div class="tema row">
+			<div class="col col-md-4">
+				<div class="row">
+					<div class="col col-sm-12">
+						<img class="foto-thumbnail img-responsive img-circle center-block" src="img/reloj.jpg" alt="Generic placeholder image">
+					</div><!--
+					<div class="btn btn-primary btn-xs pull-right">Compartir
+					</div>-->
+				</div>
+			</div>
+			<div class="col col-md-8">
+				<h2 class="featurette-heading">Reloj Monumental <span class="text-muted">Jardín principal</span></h2>
+				<p>La estructura formó parte de la fachada del palacio de gobierno municipal, demolido a causa de los daños causados por el terremoto de 1912.<br>Enmarca acceso principal al jardín y atrio de la parroquia de Temascalcingo.
+				</p>
+			</div>
+		</div>
+		<a href="https://decidte.ghost.io/2015/03/09/temascalcingo-pueblo-con-encanto/" target="_blank"><button class="btn btn-lg btn-primary center-block" role="button">Ver mas ..</button></a>
+	</section>
+
+<!-- ********************************** IMPULSA Y DIFUNDE ******************************** -->
+
+	<section id="impulsa-difunde-sec" tipo-background="rojo">
+		<div class="intro-box">
+			<h1 class="text-center">Impulsa y difunde Temascalcingo</h1>
+			<p class="lead text-center">Queremos darte la bienvenida a DECIDTE revista, donde encontrarás temas ambientales, sociales, culturales, históricos y de opinión de nuestro gran pueblo Temascalcingo y la regíon norte del Estado de México. Queremos ser el principal canal de comunicación en la zona.</p>
+			<a href="http://bit.ly/decidte" target="_blank"><button class="btn btn-lg btn-primary center-block" role="button">Ver Revista ..</button></a>
+		</div>
+
+	</section>
+
+<!-- ********************************** FOOTER ******************************************* -->	
+
+	<section id="contacto-sec" tipo-background="gris">
+		<div class="row pie">
+			<div class="col col-md-4">
+				
+			</div>
+			<div class="col col-md-4">
+				<p class="contacto_mail text-center">Contacto: <a href="mailto:informes@decidte.org?Subject=Informes%20internet" target="_top" class="contacto_mail">informes@decidte.org</a></p>	
+			</div>
+			<div class="col col-md-1">
+				<a class="icon-facebook2 pull-right" href="https://www.facebook.com/DecidteTemascalcingo" target="_blank">
+				</a>
+			</div>
+			<div class="col col-md-1">
+				<a class="icon-twitter pull-right" href="https://twitter.com/decidte" target="_blank">
+				</a>
+			</div>
+			<div class="col col-md-1">
+				<a class="icon-instagram pull-right" href="https://instagram.com/decidte_temascalcingo/" target="_blank">
+				</a>
+			</div>
+			<div class="col col-md-1">
+				<a class="icon-youtube3 pull-right" href="https://www.youtube.com/channel/UC99p40WBjfJsE1EYbOOtcVA" target="_blank">
+				</a>
+			</div>
+
+		</div>
+	<section>
+
+
+
+<!-- ********************************** FIN BODY ***************************************** -->	
+
 </body>
 </html>
